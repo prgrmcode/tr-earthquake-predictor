@@ -114,7 +114,8 @@ To use the Earthquake AI project, follow these steps:
 
 ## Data
 
-The project uses earthquake data from Turkey, including features like date, location, latitude, longitude, magnitude, depth, and more. The dataset is available in the `data` directory.
+The project uses earthquake data from Turkey, including features like date, location, latitude, longitude, magnitude, depth, and more. The dataset is available in the `data` directory and in dataset location: https://www.kaggle.com/datasets/serhatk/turkey-20-years-earthquakes-csv.
+
 Please unzip the dataset and place it in the root directory.
 
 ## Features
@@ -129,7 +130,7 @@ Please unzip the dataset and place it in the root directory.
 
 ## Model
 
-We use machine learning models to predict earthquake magnitudes. The models are trained on historical earthquake data and is available in the `'VI. Experiment with Multiple Regression Models'` section of the ProjectAIEarthquake.ipynb notebook.
+We use machine learning models to predict earthquake magnitudes. The models are trained on historical earthquake data and is available in the `'VI. Experiment with Multiple Regression Models'` section of the [Jupyter notebook](ProjectAIEarthquake.ipynb).
 
 ## Results
 
@@ -152,6 +153,6 @@ This project is licensed under the [Apache-2.0 license](LICENSE).
 
 ## Acknowledgments
 
-We would like to thank the open-source community for their contributions and the earthquake data providers AFAD agency for making their data available.
+We would like to thank the open-source community for their contributions and the earthquake data providers AFAD agency for making their data available. Also thanks to the account holders of kaggle dataset: https://www.kaggle.com/datasets/serhatk/turkey-20-years-earthquakes-csv
 
 ---
