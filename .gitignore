@@ -6,6 +6,7 @@ __pycache__/
 # Jupyter Notebook
 .ipynb_checkpoints/
 map.html
+last_results.html
 
 # Virtual Environment
 venv/
