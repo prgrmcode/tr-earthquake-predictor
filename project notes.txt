@@ -1,0 +1,23 @@
+I. Importing Libraries
+If it gives _imaging or dll error about pillow;
+ImportError: DLL load failed while importing _imaging: The specified module could not be found.
+ImportError: cannot import name 'deferred_error' from 'PIL._util' (C:\Users\Harun\anaconda3\envs\myenv\lib\site-packages\PIL\_util.py):
+conda uninstall pillow
+conda activate <your_environment_name>
+If the process has been stuck for a long time, you can try interrupting it by pressing Ctrl + C in the terminal. After that, try running the uninstall command again:
+conda uninstall pillow
+if dont work; then
+pip uninstall pillow
+
+then you can install lower version:
+conda install -c conda-forge pillow=9.0.0
+If the Conda environment is taking a long time to solve the package environment, it could be due to various factors, including complex dependencies or conflicts. To resolve this issue, you can try the following steps:
+conda update -n base -c defaults conda
+conda clean --all
+conda clean --index-cache
+conda install pillow=9.0.0
+conda install -c conda-forge --no-pin pillow=9.0.0
+or 
+conda install pillow=9.0.0
+conda install -v pillow=9.0.0
+

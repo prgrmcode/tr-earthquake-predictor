@@ -1,0 +1,4 @@
+1. AFAD dataset: 
+https://www.kaggle.com/datasets/serhatk/turkey-20-years-earthquakes-csv
+
+kaggle datasets download -d serhatk/turkey-20-years-earthquakes-csv

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th {
+  text-align: center;
+}
+th, td {
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+  </style>
+</head>
+<body>
+  
+
+
+<table style="border: 1px solid black;" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Method</th>
+      <th>pre-<br>
+        processing
+        <br/>step
+      </th>
+      <th>Data <br />Splits</th>
+      <th>MAE on <br>Test Set <br />(mm)</th>
+      <th>MAE on <br/>Independent<br /> Test Set</th>
+      <th>Training <br />Time <br>for Model <br />training</th>
+      <th>Training <br />Time <br> for <br />Hyper-<br />parameter<br> Tuning</th>
+      <th>Tuned Parameters <br/>(Best <br/>Hyperparameters)</th>
+      <th>Hyperparameter <br/>tuning<br>(CV)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Random Forest</td>
+      <td>Norm</td>
+      <td>random</td>
+      <td>0.392513</td>
+      <td>0.394573</td>
+      <td>2min 53s</td>
+      <td>12min 29s</td>
+      <td>{'n_estimators': 100, <br/>'min_samples_split': 5, <br/>'max_depth': 10}</td>
+      <td>RandomizedSearchCV<br />5-fold CV</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Random Forest 2</td>
+      <td>Norm, <br/>PCA</td>
+      <td>random</td>
+      <td>0.395063</td>
+      <td>0.397627</td>
+      <td>3min 36s</td>
+      <td>10min 34s</td>
+      <td>{'n_estimators': 100, <br/>'min_samples_split': 10, <br/>'max_depth': 10}</td>
+      <td>RandomizedSearchCV<br />5-fold CV</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Gradient Boosting</td>
+      <td>Norm</td>
+      <td>random</td>
+      <td>0.392997</td>
+      <td>0.396074</td>
+      <td>23.4 s</td>
+      <td>8min 52s</td>
+      <td>{'n_estimators': 300, <br/>'learning_rate': 0.1}</td>
+      <td>RandomizedSearchCV<br />5-fold CV</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Gradient Boosting 2</td>
+      <td>Norm, <br/>PCA</td>
+      <td>random</td>
+      <td>0.396902</td>
+      <td>0.399255</td>
+      <td>43.5 s</td>
+      <td>2min 29s</td>
+      <td>{'n_estimators': 100, <br/>'learning_rate': 0.5}</td>
+      <td>RandomizedSearchCV<br />5-fold CV</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>SVR</td>
+      <td>Norm</td>
+      <td>random</td>
+      <td>0.396975</td>
+      <td>0.399318</td>
+      <td>38min 37s</td>
+      <td>1min 49s</td>
+      <td>{'C': 0.66, <br/>'gamma': 'scale', <br/>'kernel': 'rbf'}</td>
+      <td>BayesSearchCV<br />5-fold CV</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>SVR 2</td>
+      <td>Norm, <br/>PCA</td>
+      <td>random</td>
+      <td>0.396562</td>
+      <td>0.398673</td>
+      <td>26min 34s</td>
+      <td>4min 15s</td>
+      <td>{'C': 8.146, <br/>'gamma': 'scale', <br/>'kernel': 'rbf'}</td>
+      <td>BayesSearchCV<br />5-fold CV</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>Neural Networks</td>
+      <td>Norm</td>
+      <td>random</td>
+      <td>0.401043</td>
+      <td>0.403123</td>
+      <td>4min 47s</td>
+      <td>1min 13s</td>
+      <td>{'dropout_rate': 0.334, <br/>'epochs': 104.0, <br/>'learning_rate': 0.0025, <br/>'momentum': 0.567}</td>
+      <td>Hyperopt</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>Neural Networks 2</td>
+      <td>Norm, <br/>PCA</td>
+      <td>random</td>
+      <td>0.401244</td>
+      <td>0.403615</td>
+      <td>2min 43 s</td>
+      <td>1min 20s</td>
+      <td>{'dropout_rate': 0.151, <br/>'epochs': 53.0, <br/>'learning_rate': 0.00075, <br/>'momentum': 0.26}</td>
+      <td>Hyperopt</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>XGBoost</td>
+      <td>Norm</td>
+      <td>random</td>
+      <td>0.391286</td>
+      <td>0.393584</td>
+      <td>9.06 s</td>
+      <td>7min 31s</td>
+      <td>{'learning_rate': 0.1, <br/>'max_depth': None, <br/>'min_child_weight': 12, <br/>'n_estimators': 138}</td>
+      <td>RandomizedSearchCV<br />5-fold CV</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>XGBoost 2</td>
+      <td>Norm, <br/>PCA</td>
+      <td>random</td>
+      <td>0.394734</td>
+      <td>0.397065</td>
+      <td>6.67 s</td>
+      <td>7min 16s</td>
+      <td>{'learning_rate': 0.1, <br/>'max_depth': None, <br/>'min_child_weight': 12, <br/>'n_estimators': 138}</td>
+      <td>RandomizedSearchCV<br />5-fold CV</td>
+    </tr>
+  </tbody>
+</table>
+
+</body>
+</html>
