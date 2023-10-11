@@ -137,9 +137,11 @@ We use machine learning models to predict earthquake magnitudes. The models are 
 Our model achieved impressive results in earthquake prediction. We provide details of our model's performance in the `results_best_model` directory and `'X. Using best model XGBRegressor with the best Hyperparameters to make predictions on new data'` section of the 'ProjectAIEarthquake.ipynb' Jupyter Notebook.
 
 You can find the map of predicted MAG values:
-[Map of Predicted MAG values](./docs/index.html)
 
+- [Map of Predicted MAG values](https://prgrmcode.github.io/tr-earthquake-predictor/)
 
+<br>
+<br>
 
 ![Actual vs Predicted test data](./results_best_model/actual_predicted_test_data.png)
 
