@@ -24,7 +24,7 @@ Welcome to the [TR Earthquake AI project!](ProjectAIEarthquake.ipynb) This proje
 
 ## Project Overview
 
-In this project, we aim to:
+In this project, I aim to:
 
 - Predict earthquake magnitudes and locations.
 - Analyze seismic data to identify patterns and trends.
@@ -130,11 +130,11 @@ Please unzip the dataset and place it in the root directory.
 
 ## Model
 
-We use machine learning models to predict earthquake magnitudes. The models are trained on historical earthquake data and is available in the `'VI. Experiment with Multiple Regression Models'` section of the [Jupyter notebook](ProjectAIEarthquake.ipynb).
+I developed machine learning models to predict earthquake magnitudes. The models are trained on historical earthquake data and is available in the `'VI. Experiment with Multiple Regression Models'` section of the [Jupyter notebook](ProjectAIEarthquake.ipynb).
 
 ## Results
 
-Our model achieved impressive results in earthquake prediction. We provide details of our model's performance in the `results_best_model` directory and `'X. Using best model XGBRegressor with the best Hyperparameters to make predictions on new data'` section of the 'ProjectAIEarthquake.ipynb' Jupyter Notebook.
+The project achieved impressive results in earthquake prediction. The details of the model's performance are provided in the `results_best_model` directory and `'X. Using best model XGBRegressor with the best Hyperparameters to make predictions on new data'` section of the 'ProjectAIEarthquake.ipynb' Jupyter Notebook.
 
 You can find the map of predicted MAG values:
 
@@ -164,7 +164,7 @@ Contributions to this project are welcome! You can contribute by:
 - Improving documentation.
 - Providing insights and suggestions.
 
-Please follow our [contributing guidelines](CONTRIBUTING.md) for more details.
+Please follow [contributing guidelines](CONTRIBUTING.md) for more details.
 
 ## License
 
@@ -172,6 +172,6 @@ This project is licensed under the [Apache-2.0 license](LICENSE).
 
 ## Acknowledgments
 
-We would like to thank the open-source community for their contributions and the earthquake data providers AFAD agency for making their data available. Also thanks to the account holders of kaggle dataset: https://www.kaggle.com/datasets/serhatk/turkey-20-years-earthquakes-csv
+I would like to thank the open-source community for their contributions and the earthquake data providers AFAD agency for making their data available. Also thanks to the account holders of kaggle dataset: https://www.kaggle.com/datasets/serhatk/turkey-20-years-earthquakes-csv
 
 ---
